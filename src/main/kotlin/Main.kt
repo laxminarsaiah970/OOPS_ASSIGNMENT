@@ -8,7 +8,7 @@ class Division:Calculator{
 
 }
 // Variables  class inherited to Addition class.
-class Addition:Variables(),Calculator{
+class Addition:Variables(){
 
 
     private var number1:Int=0

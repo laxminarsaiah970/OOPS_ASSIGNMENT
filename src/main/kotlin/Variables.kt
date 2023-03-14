@@ -1,4 +1,4 @@
-abstract class  Variables  //abstract class.
+abstract class  Variables :Calculator //abstract class.
 {
     // abstract method.
     abstract fun addition():Int
