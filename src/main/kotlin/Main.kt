@@ -1,20 +1,6 @@
 import java.math.RoundingMode
 import java.text.DecimalFormat
 
-interface Calculator{
-    abstract fun division(a:Int,b:Int):Double
-}
-
-abstract class  Variables  //abstract class.
-{
-    // abstract method.
-    abstract fun addition():Int
-    open fun substraction(a:Int, b:Int):Int
-    {
-        return  a-b
-    }
-
-}
 class Division:Calculator{
     override fun division(a: Int, b: Int): Double {
         return a/b.toDouble()
