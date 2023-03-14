@@ -29,7 +29,7 @@ class Addition:Variables(){
         return number1+number2
     }
 
-    override fun substraction(a: Int, b: Int): Int { //overloading
+    override fun substraction(a: Int, b: Int): Int { //overriding
         return a-b
     }
     fun multiplication():Int{  //overloading.
