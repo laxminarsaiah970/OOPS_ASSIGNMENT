@@ -6,6 +6,10 @@ class Division:Calculator{
         return a/b.toDouble()
     }
 
+    override fun addition(a: Int, b: Int): Int {
+        return a+b
+    }
+
 }
 // Variables  class inherited to Addition class.
 class Addition:Variables(){
@@ -24,12 +28,12 @@ class Addition:Variables(){
     {
         number2=m
     }
-    override  fun addition(): Int { //overriding.
+    override  fun addition(a: Int, b: Int): Int { //overriding.
 
-        return number1+number2
+        return a+b
     }
 
-    override fun substraction(a: Int, b: Int): Int { //overriding
+    override fun subtraction(a: Int, b: Int): Int { //overriding
         return a-b
     }
     fun multiplication():Int{  //overloading.
@@ -48,9 +52,9 @@ fun main(args: Array<String>) {
     val sum=Addition() //objection creation
     sum.updateNumber1(6) // assigning value
     sum.updateNumber2(8)
-    println(sum.addition()) // calling method through Addition object
+    println(sum.addition(8,9)) // calling method through Addition object
     println(sum.multiplication())
-    println(sum.substraction(8,7))
+    println(sum.subtraction(8,7))
     println(sum.division(4,2))
     val div:Calculator=Division()
     println(div.division(8,4))
